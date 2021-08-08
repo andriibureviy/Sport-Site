@@ -38,6 +38,7 @@ body {
 }
 .navigation-bar img{
     float:right;
+    margin-top: 5px;
 
 }
 .navigation-bar ul {
@@ -131,12 +132,7 @@ body {
 }
 
 
-.logo{
 
-    top: 10px !important;
-    position:relative;
-    margin-top: 12px;
-}
 
 
 
