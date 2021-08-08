@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#content {
+    max-width: 400px;
+    /*margin: auto;*/
+    margin: 0 auto;
+    left: 1%;
+    right: 1%;
+    position: center;
+}
+/*#articles p{*/
+/*    width: 50%;*/
+/*    !* height: 600px ; *!*/
+/*    float: right;*/
+/*}*/
+
+
+/* ~~ Top Navigation Bar ~~ */
+
+#navigation-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.navigation-bar {
+    background-color: grey;
+    height: 70px;
+    width: 100%;
+    text-align:center;
+    animation-name: example;
+    animation-duration: 1.3s;
+}
+.navigation-bar img{
+    float:right;
+
+}
+.navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+}
+
+
+/*.navigation-container ul,*/
+/*.navigation-container ol{*/
+/*    list-style: none;*/
+/*}*/
+/*.navigation-container > ul li a{*/
+/*    display: block;*/
+/*    padding: 15px 30px 0px 40px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.navigation-container  > ul{*/
+/*    width: 60%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.navigation-container  li ul{*/
+
+/*    left: -20px;*/
+/*    margin-top: 12px;*/
+/*    max-width: 50px;*/
+/*    margin-right: -20px;*/
+
+/*}*/
+
+/*.navigation-container  li > ul li{*/
+/*    border-top: 1px solid ;*/
+/*}*/
+
+/*.navigation-container li > ul li a{*/
+/*    padding: 10px;*/
+/*    text-transform: none;*/
+/*}*/
+
+
+/* Change color on hover */
+.navigation-bar a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+/* Active/current link */
+.navigation-bar a.active {
+    background-color: slategrey;
+    color: white;
+}
+
+#animation {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 1.3s;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:grey; left:75px; top:0px;}
+    50%  {background-color:red; left:75px; top:75px;}
+    75%  {background-color:grey; left:0px; top:75px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+.logo{
+
+    top: 10px !important;
+    position:relative;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+/* ~~ Photo ~~ */
+
+.photo{
+    float: bottom;
+    width: 100%;
+    height: 800px;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+
+
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px
+}
+
+.photo img {
+    width: 100%;
+    height:800px;
+    object-fit: cover;
+    animation: photo_img 2s ease-out ;
+
+}
+@keyframes photo_img {
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 40%;
+    }
+    70%{
+        opacity: 70%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+/* ~~ Footer ~~ */
+
+.footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: grey;
+}
