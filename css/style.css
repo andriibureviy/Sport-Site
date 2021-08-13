@@ -3,8 +3,6 @@ body {
     padding: 0;
 }
 
-
-
 #content {
     max-width: 400px;
     /*margin: auto;*/
@@ -22,7 +20,7 @@ body {
 
 /* ~~ Top Navigation Bar ~~ */
 
-#navigation-container {
+/* #navigation-container {
     width: 1200px;
     margin: 0 auto;
     height: 70px;
@@ -32,16 +30,95 @@ body {
     background-color: grey;
     height: 70px;
     width: 100%;
+    display: flex;
     text-align:center;
     animation-name: example;
     animation-duration: 1.3s;
-}
-.navigation-bar img{
-    float:right;
-    margin-top: 5px;
+} */
 
+.container-header {
+    height: 70px;
+    background-color: grey;
+    color: white;
+    position:fixed;
+    top:0;
+    width: 100%;
+  }
+  
+  
+  .logo {
+    
+  }
+  
+.nav-header ul{
+   list-style: none;
+  }    
+  
+.nav-header> ul li a{
+    display: block;
+    padding: 10px 80px 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+   }    
+  
+.nav-header > ul{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+   }    
+  
+.nav-header li ul{
+    position: relative;
+    left: -20px;
+    margin-top: 12px;
+    max-width: 200px;
+    margin-right: -100px;
+    font-size: large;
+   }    
+  
+   .nav-header li > ul li{
+    border-top: 1px solid #c7c8ca;
+   }    
+  
+   .nav-header li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: grey;
+   }   
+
+/*hover menu*/
+.nav-header li:hover > ul{
+    display: block;
+   }    
+  
+  
+
+/*No working animation with logo*/
+.logo{
+    padding: 10px;
+    margin-left: 1200px;
+    position:fixed;
+    /*Animation*/
+    animation: shake 0.5s;
+
+    animation-duration: 10s;
 }
-.navigation-bar ul {
+@keyframes shake {
+    0% { transform: translate(3px, 3px) rotate(0deg); }
+    10% { transform: translate(-3px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(3px, -3px) rotate(1deg); }
+    50% { transform: translate(-3px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 3px) rotate(0deg); }
+    70% { transform: translate(3px, 3px) rotate(-1deg); }
+    80% { transform: translate(-3px, -3px) rotate(1deg); }
+    90% { transform: translate(3px, 2px) rotate(0deg); }
+    100% { transform: translate(3px, -2px) rotate(-1deg); }
+}
+
+
+/* .navigation-bar ul {
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -64,64 +141,32 @@ body {
     text-decoration: none;
     line-height: 70px;
     padding: 5px 15px;
-}
+}*/ 
 
-
-/*.navigation-container ul,*/
-/*.navigation-container ol{*/
-/*    list-style: none;*/
-/*}*/
-/*.navigation-container > ul li a{*/
-/*    display: block;*/
-/*    padding: 15px 30px 0px 40px;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*.navigation-container  > ul{*/
-/*    width: 60%;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.navigation-container  li ul{*/
-
-/*    left: -20px;*/
-/*    margin-top: 12px;*/
-/*    max-width: 50px;*/
-/*    margin-right: -20px;*/
-
-/*}*/
-
-/*.navigation-container  li > ul li{*/
-/*    border-top: 1px solid ;*/
-/*}*/
-
-/*.navigation-container li > ul li a{*/
-/*    padding: 10px;*/
-/*    text-transform: none;*/
-/*}*/
 
 
 /* Change color on hover */
-.navigation-bar a:hover {
+.container-header a:hover {
     background-color: lightgrey;
     color: black;
 }
 
 /* Active/current link */
-.navigation-bar a.active {
+.container-header a.active {
     background-color: slategrey;
     color: white;
 }
 
-#animation {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 1.3s;
-}
+
+
+/*#animation {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    position: relative;*/
+/*    background-color: red;*/
+/*    animation-name: example;*/
+/*    animation-duration: 1.3s;*/
+/*}*/
 
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
@@ -131,29 +176,16 @@ body {
     100% {background-color:red; left:0px; top:0px;}
 }
 
-
-
-
-
-
-
-
-
 /* ~~ Photo ~~ */
-
 .photo{
     float: bottom;
     width: 100%;
     height: 800px;
     margin-top: 30px;
-    position: relative;
+    
     text-align: center;
     color: white;
 }
-
-/* Centered text */
-
-
 
 /* Centered text */
 
