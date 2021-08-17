@@ -83,18 +83,27 @@ header{
     margin-left: 500px;
 }
 
-/*main*/
+/*---------Main---------*/
 main{
     margin-top: 0px;
     width: 100%;
-    
 }
 
 .photo{
     margin-top: 0px;
+    border-radius: 20px;
+    animation: photo_img 1s ease-out ;
+}
+@keyframes photo_img {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
-/*history*/
+/*---------history---------*/
 .history{
     text-align: center;
     margin: auto;
@@ -103,7 +112,7 @@ main{
     height: 650px;
     border-bottom: 5px solid #1100ff;
     border-top: 5px solid #1100ff ;   
-     padding: 10px;
+    padding: 10px;
     background: #FFFFFF;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
@@ -113,7 +122,7 @@ main{
     color: #1100ff;
     font-size: 42px;
     font-weight: 600;
-    }
+}
 
 .history p{
     color: black;
@@ -121,18 +130,15 @@ main{
     font-weight: 500;
     line-height: 30px;
     padding-left: 20px;
-    
 }
 
-/*  Photo  */
+/*---------Photo---------*/
 .photo{
     width: 100%;
     height: 800px;
     background-image: url(../photo/stadium.jpg);
     color: white;
     object-fit: cover;
-
-
 
 }
 .photo h1{
@@ -145,26 +151,9 @@ main{
     margin-top: 0px;
 }
 
-/* Centered text */
 
 
-.photo img {
-    width: 100%;
-    height:800px;
-    object-fit: cover;
-    animation: photo_img 2s ease-out ;
-
-}
-@keyframes photo_img {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-/*  Business  */
-
+/*--------Major Victories--------*/
 .business-model{
     height: 610px;
     width: 100%;
@@ -173,15 +162,11 @@ main{
 .business-model h1{
     margin-top: 105px;
     text-align: center;
-
     font-style: normal;
     font-weight: 600;
     font-size: 51px;
-
-
     align-items: center;
     color: #1100ff;
-
 }
 
 .business-model-block{
@@ -190,7 +175,6 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 .business-model-list{
@@ -231,7 +215,7 @@ main{
 }
 
 
-/*  Footer  */
+/* ---------Footer--------- */
 
 .footer {
     /*position: fixed;*/
@@ -250,17 +234,3 @@ main{
     
 }
 
-/*#articles p{*/
-/*    width: 50%;*/
-/*    !* height: 600px ; *!*/
-/*    float: right;*/
-/*}*/
-
-
-/*  Top Navigation Bar  */
-
-/* #navigation-container {
-    width: 1200px;
-    margin: 0 auto;
-    height: 70px;
-}
