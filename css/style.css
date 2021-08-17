@@ -56,7 +56,26 @@ header{
     cursor: pointer;
     animation: shake 0.5s;
     padding-top: 20px;
-    animation-duration: 10s;
+    animation-duration: 3s;
+
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 .logo img{
@@ -111,6 +130,10 @@ main{
     height: 800px;
     background-image: url(../photo/stadium.jpg);
     color: white;
+    object-fit: cover;
+
+
+
 }
 .photo h1{
     padding-top: 300px;
@@ -136,12 +159,6 @@ main{
     0%{
         opacity: 0%;
     }
-    40%{
-        opacity: 40%;
-    }
-    70%{
-        opacity: 70%;
-    }
     100%{
         opacity: 100%;
     }
@@ -163,7 +180,8 @@ main{
 
 
     align-items: center;
-    color: #000000;
+    color: #1100ff;
+
 }
 
 .business-model-block{
@@ -184,7 +202,7 @@ main{
     background: #FFFFFF;
     border-bottom: 5px solid #1100ff;
     border-top: 5px solid #1100ff ;
-    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.08);
+    box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
 }
 
