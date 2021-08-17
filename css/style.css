@@ -5,12 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-
-
-/* HEADER ----------------------------- */
+/* HEADER  */
 #nav {
     list-style:none inside;
     margin:0;
@@ -55,11 +50,8 @@ header{
     display: flex;
     position: fixed;
     background-color: grey;
-    
-    
 }
 .logo{
-
     height: 100px;
     cursor: pointer;
     animation: shake 0.5s;
@@ -71,128 +63,6 @@ header{
     height: 50px;
     margin-left: 500px;
 }
-
-/*nav{*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    display: block;*/
-/*}*/
-
-/*   */
-/*.nav_links{*/
-/*    */
-/*margin-left: 250px;*/
-/*    */
-/*}*/
-
-/*.nav_links li{*/
-/*    display: inline-block;*/
-/*  */
-/*   */
-/*    */
-/*}*/
-/*.nav_links li ul{*/
-
-/*display: flex;*/
-/*justify-content: center;*/
-/*margin-top: 12px;*/
-/*max-width: 200px;*/
-
-/*font-size: large;*/
-/*}*/
-/*.nav_links li > ul li{*/
-/*    border-top: 1px solid #c7c8ca;*/
-/*   }    */
-/*  */
-/*   .nav_links li > ul li a{*/
-/*   */
-/*    text-transform: none;*/
-/*  */
-/*   }    */
-/*.nav_links ul li a{*/
-/*   display: block;*/
-/*   */
-/*   padding: 15px 30px 0px 0px;*/
-/*   font-size: 20px;*/
-/*   color: #0f0fe4;*/
-/*   text-decoration: none;*/
-/*}*/
-
-/*.nav_links li ul{*/
-/*    */
-/*    display: none;*/
-/*   } */
-/*  */
-/*   .nav_links li:hover > ul{*/
-/*    display: block;*/
-/*    */
-/*   }    */
-
-
-
-/*.nav_links li a{*/
-/*    transition: all 0.3s ease 0s;*/
-/*    color: black;*/
-/*    text-decoration: none;*/
-/*    font-size: 20px;*/
-/*    font-weight: 100;*/
-/*    */
-/*}*/
-
-/*.nav_links li a:hover{*/
-/*    color: rgba(252, 252, 135, 0.76);*/
-/*}*/
-
-/*.admin{*/
-/*    */
-/*}*/
-/*button {*/
-/*    color: black;*/
-/*    margin-left: 20px;*/
-/*    padding: 9px 25px;*/
-/*    background-color:rgba(78, 10, 10, 0.76) ;*/
-/*    border: none;*/
-/*    border-radius: 50px;*/
-/*    transition: all 0.3s ease 0s;*/
-/*    cursor: pointer;*/
-/*    font-size: 20px;*/
-/*    font-weight: 600;*/
-/*}*/
-
-/*button:hover{*/
-/*    background-color:rgba(252, 252, 135, 0.76);*/
-/*}*/
-
-/*li {*/
-/*    display: block;*/
-/*    transition-duration: 0.5s;*/
-/*   }*/
-/*   */
-/*   li:hover {*/
-/*     cursor: pointer;*/
-/*   }*/
-/*   */
-/*   ul li ul {*/
-/*     visibility: hidden;*/
-/*     opacity: 0;*/
-/*     position: absolute;*/
-/*     transition: all 0.5s ease;*/
-/*     margin-top: 1rem;*/
-/*     left: 0;*/
-/*     display: none;*/
-/*   }*/
-/*   */
-/*   ul li:hover > ul,*/
-/*   ul li ul:hover {*/
-/*     visibility: visible;*/
-/*     opacity: 1;*/
-/*     display: block;*/
-/*   }*/
-/*   */
-/*   ul li ul li {*/
-/*     clear: both;*/
-/*     width: 100%;*/
-/*   }*/
 
 /*main*/
 main{
@@ -221,10 +91,10 @@ main{
 }
 
 .history h1{
-color: #1100ff;
-font-size: 42px;
-font-weight: 600;
-}
+    color: #1100ff;
+    font-size: 42px;
+    font-weight: 600;
+    }
 
 .history p{
     color: black;
@@ -234,69 +104,18 @@ font-weight: 600;
     padding-left: 20px;
     
 }
-/*hover menu*/
-
-  
-  
-
-/*No working animation with logo*/
-
-
-
-/* .navigation-bar ul {
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    display:inline-block;
-    vertical-align:top;
-}
-
-.navigation-bar li {
-    list-style-type: none;
-    padding: 0px;
-    height: 24px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    display: inline;
-}
-
-.navigation-bar li a {
-    color: black;
-    font-size: 16px;
-    text-decoration: none;
-    line-height: 70px;
-    padding: 5px 15px;
-}*/ 
-
-
-
-/* Change color on hover */
-
-
-
-/*#animation {*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    position: relative;*/
-/*    background-color: red;*/
-/*    animation-name: example;*/
-/*    animation-duration: 1.3s;*/
-/*}*/
-
-
 
 /*  Photo  */
 .photo{
     width: 100%;
     height: 800px;
-    
     background-image: url(../photo/stadium.jpg);
     color: white;
 }
 .photo h1{
     padding-top: 300px;
     vertical-align: middle;
-  text-align: center;
+    text-align: center;
     font-size: 62px;
     color: #1100ff;
     font-weight: 700;
