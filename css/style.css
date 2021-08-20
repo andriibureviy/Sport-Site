@@ -5,126 +5,173 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /* HEADER  */
+
 #nav {
-    list-style:none inside;
-    margin:0;
-    padding:0;
-    text-align:center;
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
 }
+
 #nav li {
-    display:block;
-    position:relative;
-    float:left;
-    background: grey; /* menu background color */
+    display: block;
+    position: relative;
+    float: left;
+    background: grey;
+    /* menu background color */
 }
 
 #nav li a {
-    display:block;
-    padding:10px;
-    text-decoration:none;
-    width:100px; /* this is the width of the menu items */
-    line-height:50px; /* this is the hieght of the menu items */
-    color:white; /* list item font color */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    width: 100px;
+    /* this is the width of the menu items */
+    line-height: 50px;
+    /* this is the hieght of the menu items */
+    color: white;
+    /* list item font color */
 }
-#nav li li a {font-size:80%;} /* smaller font size for sub menu items */
-#nav li:hover {background:darkgrey;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
-#nav ul {
-    position:absolute;
-    padding:0;
-    left:0;
-    display:none; /* hides sublists */
-}
-#nav li:hover ul ul {display:none;} /* hides sub-sublists */
-#nav li:hover ul {display:block;} /* shows sublist on hover */
-#nav li li:hover ul {
-    display:block; /* shows sub-sublist on hover */
-    margin-left:200px; /* this should be the same width as the parent list item */
-    margin-top:-35px; /* aligns top of sub menu with top of list item */
-}
-/* HEADER ----------------------------- */
 
-header{
+#nav li li a {
+    font-size: 80%;
+}
+
+
+/* smaller font size for sub menu items */
+
+#nav li:hover {
+    background: darkgrey;
+}
+
+
+/* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+    /* hides sublists */
+}
+
+#nav li:hover ul ul {
+    display: none;
+}
+
+
+/* hides sub-sublists */
+
+#nav li:hover ul {
+    display: block;
+}
+
+
+/* shows sublist on hover */
+
+#nav li li:hover ul {
+    display: block;
+    /* shows sub-sublist on hover */
+    margin-left: 200px;
+    /* this should be the same width as the parent list item */
+    margin-top: -35px;
+    /* aligns top of sub menu with top of list item */
+}
+
+
+/* HEADER  */
+
+header {
     height: 90px;
     width: 100%;
     display: flex;
     position: fixed;
     background-color: grey;
 }
-.logo{
+
+.logo {
     height: 100px;
     cursor: pointer;
     animation: shake 0.5s;
     padding-top: 20px;
     animation-duration: 3s;
-
 }
 
 @keyframes shake {
-    10%, 90% {
+    10%,
+    90% {
         transform: translate3d(-1px, 0, 0);
     }
-
-    20%, 80% {
+    20%,
+    80% {
         transform: translate3d(2px, 0, 0);
     }
-
-    30%, 50%, 70% {
+    30%,
+    50%,
+    70% {
         transform: translate3d(-4px, 0, 0);
     }
-
-    40%, 60% {
+    40%,
+    60% {
         transform: translate3d(4px, 0, 0);
     }
 }
 
-.logo img{
+.logo img {
     height: 50px;
     margin-left: 500px;
 }
 
+
 /*---------Main---------*/
-main{
+
+main {
     margin-top: 0px;
     width: 100%;
 }
 
-.photo{
+.photo {
     margin-top: 0px;
     border-radius: 20px;
-    animation: photo_img 1s ease-out ;
+    animation: photo_img 1s infinite ease-out;
 }
+
 @keyframes photo_img {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 100%;
     }
 }
 
+
 /*---------history---------*/
-.history{
+
+.history {
     text-align: center;
     margin: auto;
     margin-top: 20px;
     width: 61.5%;
     height: 650px;
     border-bottom: 5px solid #1100ff;
-    border-top: 5px solid #1100ff ;   
+    border-top: 5px solid #1100ff;
     padding: 10px;
     background: #FFFFFF;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
 }
 
-.history h1{
+.history h1 {
     color: #1100ff;
     font-size: 42px;
     font-weight: 600;
 }
 
-.history p{
+.history p {
     color: black;
     font-size: 22px;
     font-weight: 500;
@@ -132,16 +179,18 @@ main{
     padding-left: 20px;
 }
 
+
 /*---------Photo---------*/
-.photo{
+
+.photo {
     width: 100%;
     height: 800px;
     background-image: url(../photo/stadium.jpg);
     color: white;
     object-fit: cover;
-
 }
-.photo h1{
+
+.photo h1 {
     padding-top: 300px;
     vertical-align: middle;
     text-align: center;
@@ -152,14 +201,14 @@ main{
 }
 
 
-
 /*--------Major Victories--------*/
-.business-model{
+
+.business-model {
     height: 610px;
     width: 100%;
 }
 
-.business-model h1{
+.business-model h1 {
     margin-top: 105px;
     text-align: center;
     font-style: normal;
@@ -169,7 +218,7 @@ main{
     color: #1100ff;
 }
 
-.business-model-block{
+.business-model-block {
     margin-top: 20px;
     border: 5px;
     width: 100%;
@@ -177,7 +226,7 @@ main{
     justify-content: center;
 }
 
-.business-model-list{
+.business-model-list {
     height: 450px;
     width: 361px;
     text-align: center;
@@ -185,12 +234,12 @@ main{
     margin-right: 28px;
     background: #FFFFFF;
     border-bottom: 5px solid #1100ff;
-    border-top: 5px solid #1100ff ;
+    border-top: 5px solid #1100ff;
     box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
 }
 
-.business-model-list h3{
+.business-model-list h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -199,7 +248,7 @@ main{
     color: #000000;
 }
 
-.business-model-list h4{
+.business-model-list h4 {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -208,7 +257,7 @@ main{
     color: #000000;
 }
 
-.img_business{
+.img_business {
     height: 180px;
     width: 300px;
     padding-top: 68px;
@@ -224,13 +273,11 @@ main{
     bottom: 0;
     width: 100%;
     text-align: center;
-    
     height: 100px;
     background: grey;
 }
-.footer h2{
+
+.footer h2 {
     padding: 30px;
     font-size: 22px;
-    
 }
-
