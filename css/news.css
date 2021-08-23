@@ -11,7 +11,7 @@ body {
 #nav {
     list-style: none inside;
     margin: 0;
-    padding-left: 50px;
+    padding: 0;
     text-align: center;
     display: flex;
 }
@@ -87,9 +87,7 @@ body {
 header {
     height: 90px;
     width: 100%;
-
     display: flex;
-    justify-content: space-between;
     position: fixed;
     background-color: grey;
 }
@@ -100,7 +98,6 @@ header {
     animation: shake 0.5s;
     padding-top: 20px;
     animation-duration: 3s;
-    padding-right: 50px;
 }
 
 @keyframes shake {
@@ -125,7 +122,7 @@ header {
 
 .logo img {
     height: 50px;
-
+    margin-left: 500px;
 }
 
 
@@ -159,7 +156,7 @@ main {
     margin: auto;
     margin-top: 20px;
     width: 61.5%;
-    height: auto;
+    height: 650px;
     border-bottom: 5px solid #1100ff;
     border-top: 5px solid #1100ff;
     padding: 10px;
@@ -207,7 +204,7 @@ main {
 /*--------Major Victories--------*/
 
 .business-model {
-    height: auto;
+    height: 610px;
     width: 100%;
 }
 
@@ -230,7 +227,7 @@ main {
 }
 
 .business-model-list {
-    height: auto;
+    height: 450px;
     width: 361px;
     text-align: center;
     margin-top: 91px;
