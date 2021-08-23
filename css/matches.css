@@ -133,6 +133,10 @@ main {
     width: 100%;
 }
 
+section{
+    padding-top: 100px;
+}
+
 .matches {
     height: 810px;
     width: 100%;
@@ -140,11 +144,11 @@ main {
 }
 
 .matches h1 {
-    padding-top: 150px;
+    padding-top: 20px;
     text-align: center;
     font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 90px;
     align-items: center;
     color: #1100ff;
 }
