@@ -6,281 +6,323 @@ body {
 }
 
 
-/* HEADER  */
 
-#nav {
-    list-style: none inside;
-    margin: 0;
-    padding-left: 50px;
-    text-align: center;
-    display: flex;
-}
-
-#nav li {
-    display: block;
-    position: relative;
-    float: left;
-    background: grey;
-    /* menu background color */
-}
-
-#nav li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    width: 100px;
-    /* this is the width of the menu items */
-    line-height: 50px;
-    /* this is the hieght of the menu items */
-    color: white;
-    /* list item font color */
-}
-
-#nav li li a {
-    font-size: 80%;
-}
-
-
-/* smaller font size for sub menu items */
-
-#nav li:hover {
-    background: darkgrey;
-}
-
-
-/* highlights current hovered list item and the parent list items when hovering over sub menues */
-
-#nav ul {
-    position: absolute;
-    padding: 0;
-    left: 0;
-    display: none;
-    /* hides sublists */
-}
-
-#nav li:hover ul ul {
-    display: none;
-}
-
-
-/* hides sub-sublists */
-
-#nav li:hover ul {
-    display: block;
-}
-
-
-/* shows sublist on hover */
-
-#nav li li:hover ul {
-    display: block;
-    /* shows sub-sublist on hover */
-    margin-left: 200px;
-    /* this should be the same width as the parent list item */
-    margin-top: -35px;
-    /* aligns top of sub menu with top of list item */
-}
-
-
-/* HEADER  */
-
-header {
-    height: 90px;
+header{
+    height: 100px;
     width: 100%;
-
     display: flex;
-    justify-content: space-between;
     position: fixed;
     background-color: grey;
+    
+    
 }
-
-.logo {
-    height: 100px;
+.logo{
+    margin-right: 250px;
+    height: 10px;
     cursor: pointer;
+    justify-content: center;
+
     animation: shake 0.5s;
     padding-top: 20px;
-    animation-duration: 3s;
-    padding-right: 50px;
+    animation-duration: 10s;
+    
+    
 }
 
-@keyframes shake {
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
-    }
-}
-
-.logo img {
+.logo img{
     height: 50px;
-
+   
+    
 }
 
+nav{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 
-/*---------Main---------*/
+   
+.nav_links{
+    
+margin-left: 250px;
+    
+}
 
-main {
+.nav_links li{
+    display: inline-block;
+  
+   
+    
+}
+.nav_links li ul{
+
+display: flex;
+justify-content: center;
+margin-top: 12px;
+max-width: 200px;
+
+font-size: large;
+}
+.nav_links li > ul li{
+    border-top: 1px solid #c7c8ca;
+   }    
+  
+   .nav_links li > ul li a{
+   
+    text-transform: none;
+  
+   }    
+.nav_links ul li a{
+   display: block;
+   
+   padding: 15px 30px 0px 0px;
+   font-size: 20px;
+   color: #0f0fe4;
+   text-decoration: none;
+}
+
+.nav_links li ul{
+    
+    display: none;
+   } 
+  
+   .nav_links li:hover > ul{
+    display: block;
+    
+   }    
+
+
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+
+.nav_links li a:hover{
+    color: rgba(252, 252, 135, 0.76);
+}
+
+.admin{
+    
+}
+button {
+    color: black;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color:rgba(78, 10, 10, 0.76) ;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color:rgba(252, 252, 135, 0.76);
+}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+   }
+   
+   li:hover {
+     cursor: pointer;
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+   }
+   
+   ul li ul li {
+     clear: both;
+     width: 100%;
+   }
+
+/*main*/
+main{
     margin-top: 0px;
     width: 100%;
+    
 }
 
-.photo {
+.photo{
     margin-top: 0px;
-    border-radius: 20px;
-    animation: photo_img 1s ease-out;
 }
 
-@keyframes photo_img {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-
-/*---------history---------*/
-
-.history {
+/*history*/
+.history{
     text-align: center;
     margin: auto;
     margin-top: 20px;
     width: 61.5%;
-    height: auto;
+    height: 560px;
     border-bottom: 5px solid #1100ff;
-    border-top: 5px solid #1100ff;
-    padding: 10px;
+    border-top: 5px solid #1100ff ;   
+     padding: 10px;
     background: #FFFFFF;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
 }
 
-.history h1 {
-    color: #1100ff;
-    font-size: 42px;
-    font-weight: 600;
+.history h1{
+color: #1100ff;
+font-size: 42px;
+font-weight: 600;
 }
 
-.history p {
+.history p{
     color: black;
     font-size: 22px;
     font-weight: 500;
     line-height: 30px;
     padding-left: 20px;
+    
+}
+/*hover menu*/
+
+  
+  
+
+/*No working animation with logo*/
+
+
+
+/* .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
 }
 
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+}
 
-/*---------Photo---------*/
+.navigation-bar li a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+}*/ 
 
-.photo {
+
+
+/* Change color on hover */
+
+
+
+/*#animation {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    position: relative;*/
+/*    background-color: red;*/
+/*    animation-name: example;*/
+/*    animation-duration: 1.3s;*/
+/*}*/
+
+
+
+/*  Photo  */
+.photo{
     width: 100%;
     height: 800px;
+    
     background-image: url(../photo/stadium.jpg);
     color: white;
-    object-fit: cover;
 }
-
-.photo h1 {
+.photo h1{
     padding-top: 300px;
     vertical-align: middle;
-    text-align: center;
+  text-align: center;
     font-size: 62px;
     color: #1100ff;
     font-weight: 700;
     margin-top: 0px;
 }
 
+/* Centered text */
 
-/*--------Major Victories--------*/
 
-.business-model {
-    height: auto;
+.photo img {
     width: 100%;
-}
+    height:800px;
+    object-fit: cover;
+    animation: photo_img 2s ease-out ;
 
-.business-model h1 {
-    margin-top: 105px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 51px;
-    align-items: center;
-    color: #1100ff;
 }
-
-.business-model-block {
-    margin-top: 20px;
-    border: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.business-model-list {
-    height: auto;
-    width: 361px;
-    text-align: center;
-    margin-top: 91px;
-    margin-right: 28px;
-    background: #FFFFFF;
-    border-bottom: 5px solid #1100ff;
-    border-top: 5px solid #1100ff;
-    box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-}
-
-.business-model-list h3 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    padding-top: 39px;
-    color: #000000;
-}
-
-.business-model-list h4 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    padding-top: 12px;
-    color: #000000;
-}
-
-.img_business {
-    height: 180px;
-    width: 300px;
-    padding-top: 68px;
+@keyframes photo_img {
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 40%;
+    }
+    70%{
+        opacity: 70%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 
-/* ---------Footer--------- */
+
+
+
+/*  Footer  */
 
 .footer {
     /*position: fixed;*/
-    margin-top: 120px;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
+    
     height: 100px;
     background: grey;
 }
-
-.footer h2 {
-    padding: 30px;
+.footer h2{
     font-size: 22px;
+    
+}
+
+/*#articles p{*/
+/*    width: 50%;*/
+/*    !* height: 600px ; *!*/
+/*    float: right;*/
+/*}*/
+
+
+/*  Top Navigation Bar  */
+
+/* #navigation-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
 }
