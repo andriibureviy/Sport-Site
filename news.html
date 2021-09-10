@@ -11,27 +11,32 @@
 </body>
 </html>
 <body>
-<header>
-  <nav>
-    <ul id="nav">
-      <li><a href="index.html" class="active" >HOME</a></li>
-      <li>
-        <a href="matches.html">MATCHES</a>
-        <ul>
-          <li><a href="current.html">Current matches</a></li>
-          <li><a href="future.html">Future matches</a></li>
-        </ul>
-      </li>
-      <li><a href="news.html">NEWS</a></li>
-      <li><a href="fans.html">FANS</a></li>
-      <li><a href="contacts.html">CONTACTS</a></li>
-      <li><a href="admin.html">Admin</a></li>
-    </ul>
-  </nav>
-  <div class="logo">
-    <img src="photo/1200px-Chelsea_FC.svg.png">
-  </div>
-</header>
+  <header>
+    <nav class="main-nav">
+      <ul id="nav">
+        <li><a href="index.html" class="active" >HOME</a></li>
+        <li>
+          <a href="matches.html">MATCHES</a>
+          <ul>
+            <li><a href="current.html">Current matches</a></li>
+            <li><a href="future.html">Future matches</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="fans.html">FANS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+   </div>
+    </nav>
+    <div class="logo">
+      <img src="photo/1200px-Chelsea_FC.svg.png">
+    </div>
+  </header>
 <main>
   <div class="photo" >
     <h1>CHELSEA - Football club</h1>
@@ -70,5 +75,15 @@
     <h2>This is my footer</h2>
   </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', nav)
+function nav(){
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.main-nav');
+    burger.addEventListener('click', ()=>{
+        nav.classList.toggle('show')
+    })
+}
+</script>
 </body>
 </html>
