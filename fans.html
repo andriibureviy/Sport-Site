@@ -12,7 +12,7 @@
 </html>
 <body>
 <header>
-  <nav>
+  <nav class="main-nav">
     <ul id="nav">
       <li><a href="index.html" class="active" >HOME</a></li>
       <li>
@@ -27,6 +27,11 @@
       <li><a href="contacts.html">CONTACTS</a></li>
       <li><a href="admin.html">Admin</a></li>
     </ul>
+    <div class="burger">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+ </div>
   </nav>
   <div class="logo">
     <img src="photo/1200px-Chelsea_FC.svg.png">
@@ -117,7 +122,14 @@
   </div>
 </footer>
 <script>
-  
+  document.addEventListener('DOMContentLoaded', nav)
+function nav(){
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.main-nav');
+    burger.addEventListener('click', ()=>{
+        nav.classList.toggle('show')
+    })
+}
 </script>
 </body>
 </html>
