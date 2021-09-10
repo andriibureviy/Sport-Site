@@ -6,12 +6,13 @@ body {
 }
 
 
+
 /* HEADER  */
 
 #nav {
     list-style: none inside;
     margin: 0;
-    padding: 0;
+    padding-left: 50px;
     text-align: center;
     display: flex;
 }
@@ -87,7 +88,9 @@ body {
 header {
     height: 90px;
     width: 100%;
+   
     display: flex;
+    justify-content: space-between;
     position: fixed;
     background-color: grey;
 }
@@ -98,6 +101,7 @@ header {
     animation: shake 0.5s;
     padding-top: 20px;
     animation-duration: 3s;
+    padding-right: 50px;
 }
 
 @keyframes shake {
@@ -122,8 +126,9 @@ header {
 
 .logo img {
     height: 50px;
-    margin-left: 500px;
+    
 }
+
 
 
 /*---------Main---------*/
