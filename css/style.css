@@ -288,6 +288,7 @@ main {
 .business-model {
     height: 610px;
     width: 100%;
+    
 }
 
 .business-model h1 {
@@ -303,7 +304,7 @@ main {
 .business-model-block {
     margin-top: 20px;
     border: 5px;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
 }
@@ -344,7 +345,26 @@ main {
     width: 300px;
     padding-top: 68px;
 }
+.business-modelm{
+    display: none;
+}
 
+@media only screen and (max-width: 1200px) {
+    
+    .business-model-block{
+        display: none;
+    }
+    
+    .business-modelm{
+        display: block;
+        grid-row: center;
+        display: grid;
+        margin-top: -600px;
+        padding-left: 70px;
+        grid-template-columns: repeat(auto-fill, 3fr);
+       }
+    }
+        
 
 /* ---------Footer--------- */
 

@@ -262,6 +262,17 @@ section{
     /*padding-top: 120px; fix*/
 }
 
+.user_message #new-feedback {
+    padding-top: 20px;
+
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 35px;
+    padding-left: 20px;
+    /*padding-top: 120px; fix*/
+}
+
 .user_data{
     display: flex;
     justify-content: space-between;
@@ -365,7 +376,10 @@ section{
 
 
 
-
+#text-area{
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 /* ---------Footer--------- */
@@ -385,3 +399,10 @@ section{
     padding: 30px;
     font-size: 22px;
 }
+
+
+
+
+
+
+
